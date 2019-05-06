@@ -1,32 +1,32 @@
-# Meat - Angular App Starter
+# Meat - Angular App
 
-## 1. Passos para começar
+## 1. step
 
-### Clonando o Repositório
+### Cloning the repository
 
 `git clone https://github.com/cod3rcursos/meat-app-starter.git`
 
-### Instalando as Dependências
+### Installing dependencies
 
 `npm install`
 
-### Inicializando o Servidor
+### Initializing server
 
 `ng serve` ou `npm start`
 
-## 2. Iniciando o Backend
+## 2. Initializing Backend
 
 ### Instalando o json-server
 
 `npm install -g json-server`
 
-### Iniciando o serviço (raiz da aplicação)
+### Initializing service (root from application)
 
 `json-server db.json`
 
 ## Goodies
 
-Expressões regulares usadas na validação de formulários
+Regexp used on forms validations
 
 ### Email Regex
 
@@ -36,9 +36,9 @@ Expressões regulares usadas na validação de formulários
 
 `/^[0-9]*$/`
 
-## Upgrade para Angular 4.3
+## Upgrade for Angular 4.3
 
-Dependências dos pacotes que devem ficar em package.json:
+Package dependencies from package.json:
 
 ```
 "dependencies": {
@@ -86,9 +86,9 @@ Dependências dos pacotes que devem ficar em package.json:
   }
 ```
 
-## Upgrade para Angular 6 (Apenas para a aulas finais)
+## Upgrade for Angular 6
 
-Dependências dos pacotes que devem ficar em package.json:
+Package dependencies from package.json:
 
 ```
 "dependencies": {
@@ -141,7 +141,3 @@ Dependências dos pacotes que devem ficar em package.json:
     "webdriver-manager": "12.0.6"
   }
 ```
-
-## Créditos
-
-Todas as imagens usadas na aplicação são pertencentes a freepik.com
