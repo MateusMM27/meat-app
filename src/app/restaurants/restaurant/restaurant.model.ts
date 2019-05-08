@@ -5,6 +5,4 @@ export interface IRestaurant {
   deliveryEstimate: string,
   rating: number,
   imagePath: string
-  // about: string,
-  // hours: string
 }
