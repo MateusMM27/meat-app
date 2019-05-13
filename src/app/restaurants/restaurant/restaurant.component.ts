@@ -7,7 +7,7 @@ import { IRestaurant } from './restaurant.model';
 })
 export class RestaurantComponent implements OnInit {
 
-  @Input() restaurant: IRestaurant;
+  @Input() restaurant : IRestaurant;
 
   constructor() { }
 
