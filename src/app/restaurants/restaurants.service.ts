@@ -16,10 +16,17 @@ import { ErrorHandler } from '../app.error-handler';
 
 export class RestaurantService {
 
-  constructor(private http : Http) {}
+  constructor(private http: Http) {}
 
-  restaurants() : Observable<IRestaurant[]> {
+  restaurants(): Observable<IRestaurant[]> {
     return this.http.get(`${MEAT_API}/restaurants`)
+      .map(response => response.json())
+      .catch(ErrorHandler.handleError);
+  }
+
+  //TODO: aula seção 5 aula 47 0:59
+  restaurantById(id: string): Observable<IRestaurant> {
+    return this.http.get(`${MEAT_API}/restaurant/:id`)
       .map(response => response.json())
       .catch(ErrorHandler.handleError);
   }
