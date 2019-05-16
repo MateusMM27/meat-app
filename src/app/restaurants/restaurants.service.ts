@@ -24,9 +24,8 @@ export class RestaurantService {
       .catch(ErrorHandler.handleError);
   }
 
-  //TODO: aula seção 5 aula 47 0:59
   restaurantById(id: string): Observable<IRestaurant> {
-    return this.http.get(`${MEAT_API}/restaurant/:id`)
+    return this.http.get(`${MEAT_API}/restaurants/${id}`)
       .map(response => response.json())
       .catch(ErrorHandler.handleError);
   }
