@@ -29,4 +29,16 @@ export class RestaurantService {
       .map(response => response.json())
       .catch(ErrorHandler.handleError);
   }
+
+  restaurantReviews(id: string): Observable<any> {
+    return this.http.get(`${MEAT_API}/restaurants/${id}/reviews`)
+      .map(response => response.json())
+      .catch(ErrorHandler.handleError);
+  }
+
+  menuById(id: string): Observable<any> {
+    return this.http.get(`${MEAT_API}/restaurants/${id}/menu`)
+      .map(response => response.json())
+      .catch(ErrorHandler.handleError);
+  }
 }
