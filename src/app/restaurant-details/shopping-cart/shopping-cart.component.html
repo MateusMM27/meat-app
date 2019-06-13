@@ -14,8 +14,7 @@
       <table class="table">
         <tbody>
           <tr *ngFor="let item of items()">
-            <!-- TODO: O nome do item não está aparecendo -->
-            <th style="width:60%">({{item.quantity}}x) {{ item.name }}:</th>
+            <th style="width:60%">({{item.quantity}}x) {{ item.menuItem.name }}:</th>
 
             <td class="text-right">{{ item.value() | currency: 'BRL': true }}</td>
 
