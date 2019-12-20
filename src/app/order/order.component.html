@@ -69,7 +69,12 @@
         </div>
       </div>
 
-      <mt-order-items></mt-order-items>
+      <mt-order-items
+        (decrease)="decreaseQty($event)"
+        (increase)="increaseQty($event)"
+        (remove)="remove($event)"
+        [items]="cartItems()"
+      ></mt-order-items>
 
       <div class="row">
         <div class="col-sm-6 col-xs-12">

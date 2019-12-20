@@ -5,18 +5,11 @@ import { IMenuItem } from './menu-item.model';
   selector: 'mt-menu-item',
   templateUrl: './menu-item.component.html'
 })
-export class MenuItemComponent implements OnInit {
-
+export class MenuItemComponent {
   @Input() menuItem: IMenuItem;
   @Output() add = new EventEmitter();
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   emitAddEvent(): void {
     this.add.emit(this.menuItem);
   }
-
 }

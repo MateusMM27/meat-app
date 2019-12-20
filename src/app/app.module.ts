@@ -14,6 +14,7 @@ import { MenuComponent } from './restaurant-details/menu/menu.component';
 import { MenuItemComponent } from './restaurant-details/menu/menu-item/menu-item.component';
 import { OrderComponent } from './order/order.component';
 import { OrderItemsComponent } from './order/order-items/order-items.component';
+import { OrderService } from './order/order.service';
 import { RadioComponent } from './shared/radio/radio.component';
 import { RestaurantComponent } from './restaurants/restaurant/restaurant.component'
 import { RestaurantDetailsComponent } from './restaurant-details/restaurant-details.component';
@@ -51,6 +52,7 @@ import { ShoppingCartService } from './restaurant-details/shopping-cart/shopping
   providers: [
     RestaurantService,
     ShoppingCartService,
+    OrderService,
     {provide: LOCALE_ID, useValue: 'pt-BR'}
   ],
   bootstrap: [AppComponent]
