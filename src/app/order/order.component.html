@@ -60,7 +60,7 @@
             <input
               class="form-control"
               id="inputSuccess"
-              name="optional"
+              name="optionalAddress"
               ngModel
               placeholder="Complemento"
               type="text"
@@ -112,6 +112,7 @@
           [disabled]="!form.valid || cartItems().length === 0"
           class="btn btn-success pull-right"
           href="order-summary.html"
+          (click)="checkOrder(form.value)"
         >
           <i class="fa fa-credit-card"></i>
           Concluir Pedido

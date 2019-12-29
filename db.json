@@ -370,5 +370,61 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "Rua blebers",
+      "number": 123,
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantitiy": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantitiy": 1,
+          "menuId": "donut"
+        },
+        {
+          "quantitiy": 1,
+          "menuId": "bread"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "12312321",
+      "number": 123123,
+      "optionalAddress": "12313",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantitiy": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantitiy": 1,
+          "menuId": "donut"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "address": "123214214",
+      "number": 213123,
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantitiy": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantitiy": 1,
+          "menuId": "donut"
+        }
+      ],
+      "id": 3
+    }
+  ]
 }
