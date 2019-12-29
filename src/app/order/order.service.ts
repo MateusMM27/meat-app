@@ -25,6 +25,10 @@ export class OrderService {
     this.cartService.increaseQty(item);
   }
 
+  itemsValue(): number {
+    return this.cartService.total();
+  }
+
   remove(item: CartItem): void {
     this.cartService.removeItem(item);
   }

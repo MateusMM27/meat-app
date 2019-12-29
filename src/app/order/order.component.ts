@@ -9,6 +9,7 @@ import { RadioOption } from 'app/shared/radio/radio-option.model';
   templateUrl: './order.component.html'
 })
 export class OrderComponent implements OnInit {
+  delivery: number = 8;
 
   paymentOptions: RadioOption[] = [
     {label: 'Dinheiro', value: 'MON'},
@@ -33,6 +34,10 @@ export class OrderComponent implements OnInit {
 
   increaseQty(item: CartItem): void {
     this.orderService.increaseQty(item);
+  }
+
+  itemsValue(): number {
+    return this.orderService.itemsValue();
   }
 
   remove(item: CartItem): void {

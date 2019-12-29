@@ -7,6 +7,7 @@ import { ROUTES } from './app.routes';
 
 import { AboutComponent } from './about/about.component';
 import { AppComponent } from './app.component';
+import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { InputComponent } from './shared/input/input.component';
@@ -29,6 +30,7 @@ import { ShoppingCartService } from './restaurant-details/shopping-cart/shopping
   declarations: [
     AboutComponent,
     AppComponent,
+    DeliveryCostsComponent,
     HeaderComponent,
     HomeComponent,
     InputComponent,
@@ -50,10 +52,10 @@ import { ShoppingCartService } from './restaurant-details/shopping-cart/shopping
     RouterModule.forRoot(ROUTES),
   ],
   providers: [
+    {provide: LOCALE_ID, useValue: 'pt-BR'},
+    OrderService,
     RestaurantService,
     ShoppingCartService,
-    OrderService,
-    {provide: LOCALE_ID, useValue: 'pt-BR'}
   ],
   bootstrap: [AppComponent]
 })
